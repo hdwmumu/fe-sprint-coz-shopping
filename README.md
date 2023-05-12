@@ -16,6 +16,7 @@ solo Project
 
 ### ⚙️ 개발 환경
 -  `Java Script`
+-  `React`
 
 
 
