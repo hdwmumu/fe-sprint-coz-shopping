@@ -1,15 +1,21 @@
 import React from "react";
 import styled from "styled-components";
 
-function Header() {
+
+
+
+function Header(){
   return (
-    <nav>
-      <div>
-        <img src="img/로고.png" alt="logo" />
+    <nav class="navber">
+      <div className="navber_logo">
+    <img src="img/로고.png" alt="logo" />
       </div>
-      <div></div>
+      <div className="navbar_menu">
+
+      </div>
+
     </nav>
-  );
+  )
 }
 // const Header = () => {
 //   return (

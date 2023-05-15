@@ -1,15 +1,9 @@
-import React from "react";
+import React from 'react'
 
 const Footer = () => {
   return (
-    <div>
-      <p>
-        개인정보 처리방침 | 이용 약관
-        <br />
-        All rights reserved @ Codestates
-      </p>
-    </div>
-  );
-};
+    <div>Footer</div>
+  )
+}
 
-export default Footer;
+export default Footer
