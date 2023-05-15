@@ -4,8 +4,9 @@ import styled from "styled-components"
 
 import HomeMain from "./Page/HomeMain";
 import ProductList from "./Page/ProductList";
-import BookMark from "./Page/BookMark";
+import BookMark from "./components/BookMark/BookMark";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/products/list" element={<ProductList />} />
         <Route path="/bookmark" element={<BookMark />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }
