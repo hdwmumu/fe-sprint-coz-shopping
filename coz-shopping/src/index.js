@@ -1,15 +1,25 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-
+import ReactDOM from 'react-dom/client';//react-dom에서 ReactDOM을 import 시킴
 import App from './App';
 
+import { createGlobalStyle } from "styled-components";
+
+
+const GlobalStyle = createGlobalStyle`
+
+*{
+  box-sizing: border-box;
+  margin: 0px;
+}
+`;
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  <>
     <App />
+    <GlobalStyle />
     
-  </React.StrictMode>
+  </>
 );
 
 // If you want to start measuring performance in your app, pass a function

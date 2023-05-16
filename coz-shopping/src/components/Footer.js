@@ -6,7 +6,7 @@ width: 100%;
 height: 58px;
 background: #FFFFFF;
 border-top: 1px solid rgba(0, 0, 0, 0.1);
-position: absolute;
+position: fixed;
 bottom: 0;
 `;
 
@@ -21,7 +21,8 @@ const Content = styled.p`
   /* or 11px */
   display: flex;
   justify-content: center;
-  
+  margin-top: 17px;
+  margin-bottom: -10px;
 `;
 const Footer = () => {
   return (
