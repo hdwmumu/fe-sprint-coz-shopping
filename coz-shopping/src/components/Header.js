@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from "react";
 
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import logo from "../assets/로고.png";
 import coz from "../assets/쇼핑몰 이름.png";
 import hamburger from "../assets/아이콘.png";
 import { DropDownProfile } from "./DropDownProfile";
-
 import styled from "styled-components";
 
 const HeaderWrapp = styled.header`
@@ -40,6 +39,7 @@ const Hamburgerbar = styled.img`
 
 function Header() {
 	const [openDropDown, setOpenDropDown] = useState(false);
+
 	return (
 		<>
 			<HeaderWrapp>

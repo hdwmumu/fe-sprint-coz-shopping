@@ -3,13 +3,6 @@ import styled from "styled-components";
 
 const Main = styled.main``;
 
-const ItemBox = styled.main``;
-
-const Item = styled.main``;
-
-const ItemImg = styled.main``;
-const BookMarkStar = styled.main``;
-const ItemList = styled.main``;
 
 const HomeMain = () => {
 	//const [ itemList, setItemList ] = useState();

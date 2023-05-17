@@ -53,6 +53,11 @@ const Icon = styled.img`
 
 export const DropDownProfile = () => {
 	const [openDropDown, setOpenDropDown] = useState(false);
+
+	const handleOpenDropDown = () => {
+    setOpenDropDown(!openDropDown);
+	};
+
   return (
     <div>
       <Dropdown>
@@ -61,7 +66,7 @@ export const DropDownProfile = () => {
       <PageList>
         <Link
           to="/products/list"
-          onClick={() => setOpenDropDown((prev) => !prev)}
+          onClick={handleOpenDropDown}
         >
           <Icon src="/image/상품 아이콘.png" />
           상품리스트 페이지
@@ -70,7 +75,7 @@ export const DropDownProfile = () => {
       <PageList>
         <Link
           to="/Bookmark"
-          onClick={DropDownProfile}
+          onClick={handleOpenDropDown}
         >
           <Icon src="/image/북마크 아이콘.png" />
           북마크 페이지
