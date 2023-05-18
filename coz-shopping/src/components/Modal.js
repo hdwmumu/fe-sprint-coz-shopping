@@ -43,7 +43,7 @@ function ModalOpen() {
 					maskClosable={true}
 					onClose={closeModal}
 				>
-					<p>이 모달이 어디에 표시 되고 있는 거죠 </p>
+					<p>모달창</p>
 				</Modal>
 			)}
 			

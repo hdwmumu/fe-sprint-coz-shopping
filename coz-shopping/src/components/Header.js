@@ -17,7 +17,7 @@ const HeaderWrapp = styled.header`
 	box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
 	background-color: white;
 	width: 100%;
-	height: 80px;
+	height: 75px;
 `;
 const CodeStatesLogo = styled.img`
 	margin: 23px 0px 0px 70px;
