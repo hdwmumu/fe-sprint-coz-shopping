@@ -1,22 +1,54 @@
-import { useState } from "react"
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { styled } from "styled-components";
+import styled from "styled-components";
+import Modal from "react-modal";
 
-
-
-
+export const ModalStyle = (Modal.styles = {
+	// TODO : Modal창 CSS를 구현합니다.
+	content: {
+		top: "15%",
+		left: "90vw",
+		right: "auto",
+		bottom: "auto",
+		transform: "translate(-50%, -50%)",
+		width: "200px",
+		height: "183px",
+		position: "absolute",
+		padding: "0",
+		borderRadius: "12px",
+		zIndex: "2000",
+	},
+});
+// 모달의 App element 설정
+Modal.setAppElement("#root");
 
 function ModalOpen() {
-
-	const [isModalOpen, setIsModalOpen] = useState(false);
-
-	const handleModal = () => {
-		setIsModalOpen((prev) => !prev);
+	const [modalVisible, setModalVisible] = useState(false);
+	const openModal = () => {
+		setModalVisible(true);
 	};
-
+	const closeModal = () => {
+		setModalVisible(false);
+	};
+	useEffect(() => {
+		Modal.setAppElement("#root"); // 모달이 열릴 때 App element 설정
+	}, []);
 	return (
-<></>
-    );
+		<>
+			<button onClick={openModal}>Open Modal</button>
+			{modalVisible && (
+				<Modal
+					visible={modalVisible}
+					closable={true}
+					maskClosable={true}
+					onClose={closeModal}
+				>
+					<p>모달창</p>
+				</Modal>
+			)}
+			
+		</>
+	);
 }
 
 export default ModalOpen;
